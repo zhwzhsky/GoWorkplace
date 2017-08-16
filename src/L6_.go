@@ -23,7 +23,11 @@ func main() {
 	// var p3 [3]*int
 	p3 := [...]*int{&b[0], &b[1]}
 	fmt.Println(p3)
+	*p3[1] = 99
 	for i := 0; i < len(p3); i++ {
 		fmt.Println(*p3[i])
+	}
+	for i, value := range a {
+		fmt.Println("a[", i, "]=", value)
 	}
 }
