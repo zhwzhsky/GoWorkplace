@@ -23,7 +23,7 @@ func (pc PhoneConnecter) Name() string {
 }
 
 func (pc PhoneConnecter) Connect() {
-	fmt.Println("Connect:", pc.name)
+	fmt.Println("Connected:", pc.name)
 }
 
 func main() {
